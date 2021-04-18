@@ -1,4 +1,4 @@
 # Sort with cpp
-- Insertion sort
-- Serection sort
-- shell sort
+- [x] Insertion sort
+- [x] Serection sort
+- [x] shell sort
