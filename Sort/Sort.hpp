@@ -10,7 +10,7 @@ using namespace std;
 template<typename T>
 class Sort {
 	public:
-		virtual void sort(vector<T>&);
+		virtual void sort(vector<T>&) = 0;
 		void show(vector<T> &);
 	   	void issort(vector<T> &);
 };
