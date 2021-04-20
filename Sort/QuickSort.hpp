@@ -50,8 +50,8 @@ void QuickSort<T>::quicksort(vector<T> &arr, int lo, int hi) {
 		return;
 	}
 	int partition_index = partition(arr, lo, hi);
-	this->shellsort(arr, lo, partition_index);
-	this->shellsort(arr, partition_index+1, hi);
+	quicksort(arr, lo, partition_index-1);
+	quicksort(arr, partition_index+1, hi);
 }
 
 template<typename T>
