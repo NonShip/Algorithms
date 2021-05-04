@@ -26,13 +26,14 @@ void Sort<T>::show(vector<T> & array) {
 template<typename T>
 void Sort<T>::issort(vector<T> &array) {
 	int i;
-	for (i = 1; i < array.size(); i++) {
-		if (array[i-1] > array[i]) {
-			cout << "sort failed\n";
+	static int flag = 1;
+	for (i = 0; i < array.size()-1; i++) {
+		if (array[i+1] > array[i]) {
+			flag = 0;
 			break;
 		}
 	}
-	cout << "sort success\n";
+	cout << ((flag == 0) ? "sort failed\n" :"sort success\n");
 }
 
 #endif
