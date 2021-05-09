@@ -28,7 +28,7 @@ void Sort<T>::issort(vector<T> &array) {
 	int i;
 	static int flag = 1;
 	for (i = 0; i < array.size()-1; i++) {
-		if (array[i+1] > array[i]) {
+		if (array[i+1] <  array[i]) {
 			flag = 0;
 			break;
 		}
